@@ -1,0 +1,254 @@
+{
+  "schema": "bibmargin-report/1",
+  "project": {
+    "schema": "bibmargin/1",
+    "title": "Field notes bibliography",
+    "notes": "Fictional records for testing. No real publications or verified identifiers.",
+    "reviews": [],
+    "source": "% Fictional records. Preserve this source as entered.\r\n@string{lab = \"Example Lab\"}\r\n@article{river2024,\r\n title = {Mapping the {River} Garden},\r\n author = {Vale, Mira},\r\n year = 2024,\r\n doi = {10.5555/bibmargin-demo-a},\r\n journal = lab\r\n}\r\n\r\n@article{gardenCopy, title = \"Mapping the River Garden\", author = {Vale, Mira}, year = {2024}, doi = {https://doi.org/10.5555/BIBMARGIN-DEMO-A}, pages = {12--19}}\r\n\r\n@book{RIVER2024, title = {The Lantern Catalogue}, author = {Chen, Ari}, year = {2021}}\r\n\r\n@misc{notes, title = {Mapping the river garden}, year = \"2024\", note = {A separate workshop handout; review before deciding.}}\r\n\r\n@misc{unique, title = {Seed packet inventory}, year = 2025, note = {No match expected.}}\r\n"
+  },
+  "summary": {
+    "entries": 5,
+    "groups": 3,
+    "affected": 4,
+    "reviewed": 0,
+    "warnings": 2
+  },
+  "groups": [
+    {
+      "id": "key:0,2",
+      "kind": "key",
+      "value": "river2024",
+      "members": [
+        0,
+        2
+      ],
+      "reason": "Same citation key after lowercasing. This is a collision, not proof of the same work.",
+      "review": {
+        "id": "key:0,2",
+        "state": "unreviewed",
+        "note": ""
+      },
+      "keys": [
+        "river2024",
+        "RIVER2024"
+      ]
+    },
+    {
+      "id": "doi:0,1",
+      "kind": "doi",
+      "value": "10.5555/bibmargin-demo-a",
+      "members": [
+        0,
+        1
+      ],
+      "reason": "Same literal DOI after removing a resolver / doi: prefix and lowercasing. Identifier was not looked up.",
+      "review": {
+        "id": "doi:0,1",
+        "state": "unreviewed",
+        "note": ""
+      },
+      "keys": [
+        "river2024",
+        "gardenCopy"
+      ]
+    },
+    {
+      "id": "title:0,1,3",
+      "kind": "title",
+      "value": "mapping the river garden · 2024",
+      "members": [
+        0,
+        1,
+        3
+      ],
+      "reason": "Same plain title and four-digit year after case, brace and whitespace normalization. Candidate only; editions and distinct works can match.",
+      "review": {
+        "id": "title:0,1,3",
+        "state": "unreviewed",
+        "note": ""
+      },
+      "keys": [
+        "river2024",
+        "gardenCopy",
+        "notes"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": 0,
+      "key": "river2024",
+      "type": "article",
+      "start": 85,
+      "end": 239,
+      "raw": "@article{river2024,\r\n title = {Mapping the {River} Garden},\r\n author = {Vale, Mira},\r\n year = 2024,\r\n doi = {10.5555/bibmargin-demo-a},\r\n journal = lab\r\n}",
+      "fields": [
+        {
+          "name": "title",
+          "text": "Mapping the {River} Garden",
+          "resolved": true,
+          "raw": "{Mapping the {River} Garden}"
+        },
+        {
+          "name": "author",
+          "text": "Vale, Mira",
+          "resolved": true,
+          "raw": "{Vale, Mira}"
+        },
+        {
+          "name": "year",
+          "text": "2024",
+          "resolved": true,
+          "raw": "2024"
+        },
+        {
+          "name": "doi",
+          "text": "10.5555/bibmargin-demo-a",
+          "resolved": true,
+          "raw": "{10.5555/bibmargin-demo-a}"
+        },
+        {
+          "name": "journal",
+          "text": "lab",
+          "resolved": false,
+          "raw": "lab"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "key": "gardenCopy",
+      "type": "article",
+      "start": 243,
+      "end": 405,
+      "raw": "@article{gardenCopy, title = \"Mapping the River Garden\", author = {Vale, Mira}, year = {2024}, doi = {https://doi.org/10.5555/BIBMARGIN-DEMO-A}, pages = {12--19}}",
+      "fields": [
+        {
+          "name": "title",
+          "text": "Mapping the River Garden",
+          "resolved": true,
+          "raw": "\"Mapping the River Garden\""
+        },
+        {
+          "name": "author",
+          "text": "Vale, Mira",
+          "resolved": true,
+          "raw": "{Vale, Mira}"
+        },
+        {
+          "name": "year",
+          "text": "2024",
+          "resolved": true,
+          "raw": "{2024}"
+        },
+        {
+          "name": "doi",
+          "text": "https://doi.org/10.5555/BIBMARGIN-DEMO-A",
+          "resolved": true,
+          "raw": "{https://doi.org/10.5555/BIBMARGIN-DEMO-A}"
+        },
+        {
+          "name": "pages",
+          "text": "12--19",
+          "resolved": true,
+          "raw": "{12--19}"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "RIVER2024",
+      "type": "book",
+      "start": 409,
+      "end": 495,
+      "raw": "@book{RIVER2024, title = {The Lantern Catalogue}, author = {Chen, Ari}, year = {2021}}",
+      "fields": [
+        {
+          "name": "title",
+          "text": "The Lantern Catalogue",
+          "resolved": true,
+          "raw": "{The Lantern Catalogue}"
+        },
+        {
+          "name": "author",
+          "text": "Chen, Ari",
+          "resolved": true,
+          "raw": "{Chen, Ari}"
+        },
+        {
+          "name": "year",
+          "text": "2021",
+          "resolved": true,
+          "raw": "{2021}"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "notes",
+      "type": "misc",
+      "start": 499,
+      "end": 625,
+      "raw": "@misc{notes, title = {Mapping the river garden}, year = \"2024\", note = {A separate workshop handout; review before deciding.}}",
+      "fields": [
+        {
+          "name": "title",
+          "text": "Mapping the river garden",
+          "resolved": true,
+          "raw": "{Mapping the river garden}"
+        },
+        {
+          "name": "year",
+          "text": "2024",
+          "resolved": true,
+          "raw": "\"2024\""
+        },
+        {
+          "name": "note",
+          "text": "A separate workshop handout; review before deciding.",
+          "resolved": true,
+          "raw": "{A separate workshop handout; review before deciding.}"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "unique",
+      "type": "misc",
+      "start": 629,
+      "end": 717,
+      "raw": "@misc{unique, title = {Seed packet inventory}, year = 2025, note = {No match expected.}}",
+      "fields": [
+        {
+          "name": "title",
+          "text": "Seed packet inventory",
+          "resolved": true,
+          "raw": "{Seed packet inventory}"
+        },
+        {
+          "name": "year",
+          "text": "2025",
+          "resolved": true,
+          "raw": "2025"
+        },
+        {
+          "name": "note",
+          "text": "No match expected.",
+          "resolved": true,
+          "raw": "{No match expected.}"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "entry": null,
+      "message": "@string block preserved; macros and preambles are not evaluated."
+    },
+    {
+      "entry": 0,
+      "message": "journal contains an unevaluated macro; omitted from value matching."
+    }
+  ]
+}

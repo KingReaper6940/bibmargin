@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; style-src &#39;unsafe-inline&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;"><title>Field notes bibliography</title><style>body{font:16px/1.6 system-ui;max-width:1100px;margin:auto;padding:32px;color:#173e38}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 monospace;background:#eff6f4;padding:16px}article{border-top:1px solid #a9c7bd;padding:24px 0}h1{font-size:32px}summary{cursor:pointer;padding:10px}p{overflow-wrap:anywhere}</style><h1>Field notes bibliography</h1><p>{&quot;entries&quot;:5,&quot;groups&quot;:3,&quot;affected&quot;:4,&quot;reviewed&quot;:0,&quot;warnings&quot;:2}</p><p>Signals identify candidates, not proven duplicate works. No entries were deleted, merged, looked up or verified. Overlapping signal groups are independent.</p><p>Fictional records for testing. No real publications or verified identifiers.</p><article><h2>key · river2024</h2><p>Same citation key after lowercasing. This is a collision, not proof of the same work.</p><p>Review: unreviewed · </p><details><summary>Entry 1 · river2024</summary><pre>@article{river2024,
+ title = {Mapping the {River} Garden},
+ author = {Vale, Mira},
+ year = 2024,
+ doi = {10.5555/bibmargin-demo-a},
+ journal = lab
+}</pre></details><details><summary>Entry 3 · RIVER2024</summary><pre>@book{RIVER2024, title = {The Lantern Catalogue}, author = {Chen, Ari}, year = {2021}}</pre></details></article><article><h2>doi · 10.5555/bibmargin-demo-a</h2><p>Same literal DOI after removing a resolver / doi: prefix and lowercasing. Identifier was not looked up.</p><p>Review: unreviewed · </p><details><summary>Entry 1 · river2024</summary><pre>@article{river2024,
+ title = {Mapping the {River} Garden},
+ author = {Vale, Mira},
+ year = 2024,
+ doi = {10.5555/bibmargin-demo-a},
+ journal = lab
+}</pre></details><details><summary>Entry 2 · gardenCopy</summary><pre>@article{gardenCopy, title = &quot;Mapping the River Garden&quot;, author = {Vale, Mira}, year = {2024}, doi = {https://doi.org/10.5555/BIBMARGIN-DEMO-A}, pages = {12--19}}</pre></details></article><article><h2>title · mapping the river garden · 2024</h2><p>Same plain title and four-digit year after case, brace and whitespace normalization. Candidate only; editions and distinct works can match.</p><p>Review: unreviewed · </p><details><summary>Entry 1 · river2024</summary><pre>@article{river2024,
+ title = {Mapping the {River} Garden},
+ author = {Vale, Mira},
+ year = 2024,
+ doi = {10.5555/bibmargin-demo-a},
+ journal = lab
+}</pre></details><details><summary>Entry 2 · gardenCopy</summary><pre>@article{gardenCopy, title = &quot;Mapping the River Garden&quot;, author = {Vale, Mira}, year = {2024}, doi = {https://doi.org/10.5555/BIBMARGIN-DEMO-A}, pages = {12--19}}</pre></details><details><summary>Entry 4 · notes</summary><pre>@misc{notes, title = {Mapping the river garden}, year = &quot;2024&quot;, note = {A separate workshop handout; review before deciding.}}</pre></details></article><h2>All scanner notes</h2><p>Source: @string block preserved; macros and preambles are not evaluated.</p><p>Entry 1: journal contains an unevaluated macro; omitted from value matching.</p><h2>Complete original source</h2><pre>% Fictional records. Preserve this source as entered.
+@string{lab = &quot;Example Lab&quot;}
+@article{river2024,
+ title = {Mapping the {River} Garden},
+ author = {Vale, Mira},
+ year = 2024,
+ doi = {10.5555/bibmargin-demo-a},
+ journal = lab
+}
+
+@article{gardenCopy, title = &quot;Mapping the River Garden&quot;, author = {Vale, Mira}, year = {2024}, doi = {https://doi.org/10.5555/BIBMARGIN-DEMO-A}, pages = {12--19}}
+
+@book{RIVER2024, title = {The Lantern Catalogue}, author = {Chen, Ari}, year = {2021}}
+
+@misc{notes, title = {Mapping the river garden}, year = &quot;2024&quot;, note = {A separate workshop handout; review before deciding.}}
+
+@misc{unique, title = {Seed packet inventory}, year = 2025, note = {No match expected.}}
+</pre></html>

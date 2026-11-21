@@ -51,6 +51,7 @@ export function parse(source,limits=LIMITS){
   const kind=type[0].toLowerCase();
   if(blocks.length>=limits.blocks)fail('Block limit exceeded.');
   if(['comment','string','preamble'].includes(kind)){
+   if(kind==='comment'&&opener!=='{')fail('Only braced @comment blocks are supported.');
    if(opener==='{'&&kind==='comment')braced();
    else{
     i++;
