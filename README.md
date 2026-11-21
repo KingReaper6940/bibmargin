@@ -2,6 +2,8 @@
 
 Before you cite it twice.
 
+**[Open Bibmargin](https://bibmargin.vercel.app)**
+
 Bibmargin is a local BibTeX duplicate-review desk. It collects explicit match signals into a browsable shelf, compares complete fields, and saves your assessment without deleting, merging or rewriting a reference.
 
 - **Three independent signals:** citation-key collisions, literal DOI matches, and plain title + year candidates.
