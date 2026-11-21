@@ -1,4 +1,4 @@
-import {mkdir,copyFile,rm} from 'node:fs/promises';
+import {mkdir,readFile,writeFile,rm} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {dirname,resolve} from 'node:path';
@@ -7,5 +7,5 @@ if(dirname(out)!==root||out===root)throw Error('Unexpected build path.');
 const assets=['index.html','style.css','favicon.svg','chevron.svg',...['model','parse','review','example','exports','files','app'].map(n=>'src/'+n+'.mjs')];
 for(const p of assets.filter(p=>p.endsWith('.mjs')))execFileSync(process.execPath,['--check',resolve(root,p)]);
 await rm(out,{recursive:true,force:true});await mkdir(resolve(out,'src'),{recursive:true});
-for(const p of assets)await copyFile(resolve(root,p),resolve(out,p));
+for(const p of assets)await writeFile(resolve(out,p),(await readFile(resolve(root,p),'utf8')).replaceAll('\r\n','\n'));
 console.log('Built Bibmargin: '+assets.length+' allowlisted assets.');
